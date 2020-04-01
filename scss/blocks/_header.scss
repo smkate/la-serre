@@ -1,0 +1,139 @@
+.header {
+    background-color: $mainColor;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.navbar__wrap {
+    display: flex;
+    flex-direction: row;
+}
+.navbar__logo,
+.navbar__languages {
+    flex: 6;
+    align-self: center;
+}
+.logo__image {
+    width: 125px;
+}
+.navbar__languages {
+    text-align: right;
+}
+.languages__item {
+    text-decoration: none;
+    color: #000000;
+
+    &:hover {
+        color: #CA9E67;
+    }
+}
+.languages__item--active {
+    color: #CA9E67;
+}
+.languages__line {
+    border-left: 2px solid black;
+    border-top: 11px solid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.banner {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    background-color: $mainColor;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+    &__title {
+        flex: 6;
+
+        &:before {
+            content: '';
+            width: 50px;
+            background-color: #ead8c2;
+            height: 1px;
+            margin-bottom: 25px;
+            display: block;
+        }
+    }
+
+    &__title-box {
+        display: flex;
+        width: 100%;
+        padding-left: 123px;
+        padding-right: 123px;
+    }
+}
+.banner__title-epsn-detail {
+    font-size: 16px;
+}
+.banner__title-offset {
+    font-size: 34px;
+}
+.banner:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 30%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    transform: skewY(-8deg);
+    transform-origin: 100%;
+    /* -webkit-backface-visibility: hidden; // for Chrome Windows */
+}
+.main-animation {
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 200px);
+    height: 500px;
+    width: 400px;
+    z-index: 0;
+}
+@keyframes upDown {
+    from {
+        transform: translate(0, 0px);
+      }
+      50% {
+        transform: translate(0, 30px);
+      }
+      to {
+        transform: translate(0, 0px);
+      }
+}
+.halo.rotation {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 103;
+    background: url(../img/header/Header_head.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: upDown 3s ease-in-out infinite alternate;
+}
+.halo.rotation::before {
+    content: '';
+    position: absolute;
+    height: 130%;
+    width: 130%;
+    top: -15%;
+    left: -15%;
+    background: url(../img/header/Luminous_halo.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.oval {
+    position: absolute;
+    height: 400px;
+    width: 1200px;
+    top: 50px;
+    left: -370px;
+    z-index: 103;
+    background: url(../img/header/Oval.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}

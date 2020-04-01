@@ -1,17 +1,10 @@
-@font-face {
-    font-family: 'Suisse Intl Medium';
-    src: url("../fonts/Suisse Int'l Medium/Suisse Int'l Medium.woff") format("woff");
-}
-@font-face {
-    font-family: 'Euclid Flex Trial';
-    src: url("../fonts/Euclid Flex Trial/Euclid Flex Trial.woff") format("woff");
-}
-body {
-    font-family: 'Suisse Intl Medium';
-    font-size: 14px;
-    font-style: normal;
-    color: #272727;
-}
+@import 'grid';
+@import 'fonts';
+@import 'colors';
+@import 'interface';
+
+@import 'blocks/header';
+
 h2, h3 {
     font-family: 'Euclid Flex Trial';
     font-style: normal;
@@ -22,131 +15,10 @@ h2 {
 h3 {
     font-size: 22px;
 }
-img {
-    max-width: 100%;
-}
-header {
-    background-color: #fbfae8;
-    padding-top: 35px;
-    padding-bottom: 35px;
-}
-.container-fluid {
-    display: flex;
-    flex-direction: row;
-}
-.container {
-    display: flex;
-    /* width: 100%;s */
-    padding-left: 123px;
-    padding-right: 123px;
-}
-.justify-content-between {
-    justify-content: space-between;
-}
-.text-right {
-    text-align: right;
-}
-.logo, .languages {
-    flex: 6;
-    align-self: center;
-}
-.logo img {
-    width: 125px;
-}
-.languages span {
-    border-left: 2px solid black;
-    border-top: 2px solid;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-a {
-    text-decoration: none;
-    color: #000000;
-}
-.banner {
-    height: 800px;
-    background-color: #fbfae8;
-    /* background: linear-gradient(-15deg, transparent 180px, #fbfae8 0), linear-gradient(15deg, transparent 180px, #ffffff 0); */
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
-}
-.banner:after {
-    background: #ffffff;
-    content: '';
-    display: block;
-    height: 30%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    bottom: 0;
-    transform: skewY(-8deg);
-    transform-origin: 100%;
-    /* -webkit-backface-visibility: hidden; // for Chrome Windows */
-}
-.banner-title-box {
-    display: flex;
-    width: 100%;
-    padding-left: 123px;
-    padding-right: 123px;
-}
-.banner-title {
-    flex: 6;
-}
-.main-animation {
-    position: absolute;
-    top: 100px;
-    left: calc(50% - 200px);
-    height: 500px;
-    width: 400px;
-    z-index: 0;
-}
-@keyframes upDown {
-    from {
-        transform: translate(0, 0px);
-      }
-      50% {
-        transform: translate(0, 30px);
-      }
-      to {
-        transform: translate(0, 0px);
-      }
-}
-.halo.rotation {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 103;
-    background: url(../img/header/Header_head.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-    animation: upDown 3s ease-in-out infinite alternate;
-}
-.halo.rotation::before {
-    content: '';
-    position: absolute;
-    height: 130%;
-    width: 130%;
-    top: -15%;
-    left: -15%;
-    background: url(../img/header/Luminous_halo.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-.oval {
-    position: absolute;
-    height: 400px;
-    width: 1200px;
-    top: 50px;
-    left: -370px;
-    z-index: 103;
-    background: url(../img/header/Oval.svg) no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+// img {
+//     max-width: 100%;
+// }
+
 .growing-box {
     margin-top: 80px;
     flex-direction: column;

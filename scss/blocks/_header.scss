@@ -1,26 +1,30 @@
 .header {
     background-color: $mainColor;
+}
+.navbar {
     padding-top: 35px;
-    padding-bottom: 35px;
-}
-.navbar__wrap {
-    display: flex;
-    flex-direction: row;
-}
-.navbar__logo,
-.navbar__languages {
-    flex: 6;
-    align-self: center;
+    margin-bottom: 30px;
+
+    &__logo,
+    &__languages {
+        flex: 6;
+        align-self: center;
+    }
+
+    &__languages {
+        display: flex;
+        align-items: center;
+        text-align: right;
+        justify-content: flex-end;
+    }
 }
 .logo__image {
     width: 125px;
 }
-.navbar__languages {
-    text-align: right;
-}
 .languages__item {
     text-decoration: none;
     color: #000000;
+    line-height: 14px;
 
     &:hover {
         color: #CA9E67;
@@ -43,38 +47,48 @@
     z-index: 1;
     position: relative;
     overflow: hidden;
-
-    &__title {
-        flex: 6;
-
-        &:before {
-            content: '';
-            width: 50px;
-            background-color: #ead8c2;
-            height: 1px;
-            margin-bottom: 25px;
-            display: block;
-        }
-    }
-
-    &__title-box {
-        display: flex;
-        width: 100%;
-        padding-left: 123px;
-        padding-right: 123px;
-    }
+}
+.top-line:before {
+    content: '';
+    width: 50px;
+    background-color: #ead8c2;
+    height: 1px;
+    margin-bottom: 25px;
+    display: block;
 }
 .banner__title-epsn-detail {
     font-size: 16px;
+    line-height: 21px;
+    flex: 6;
 }
 .banner__title-offset {
     font-size: 34px;
+    line-height: 42px;
+    flex: 4;
+}
+.stick-cah {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 9999;
+
+    &:before {
+        position: absolute;
+        right: 20px;
+        width: 30px;
+    }
+
+    & img {
+        padding-top: 30px;
+        width: 50%;
+        object-fit: contain;
+    }
 }
 .banner:after {
     background: #ffffff;
     content: '';
     display: block;
-    height: 30%;
+    height: 25%;
     left: 0;
     position: absolute;
     right: 0;
@@ -94,13 +108,13 @@
 }
 @keyframes upDown {
     from {
-        transform: translate(0, 0px);
-      }
-      50% {
-        transform: translate(0, 30px);
-      }
-      to {
-        transform: translate(0, 0px);
+    //     transform: translate(0, 0px);
+    //   }
+    //   50% {
+    //     transform: translate(0, 30px);
+    //   }
+    //   to {
+    //     transform: translate(0, 0px);
       }
 }
 .halo.rotation {

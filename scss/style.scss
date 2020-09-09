@@ -1,198 +1,93 @@
-@import 'grid';
-@import 'fonts';
-@import 'colors';
-@import 'interface';
+@import "grid";
+@import "fonts";
+@import "colors";
+@import "interface";
 
-@import 'blocks/header';
+@import "blocks/header";
+@import "blocks/growing-box";
+@import "blocks/news";
+@import "blocks/events";
+@import "blocks/holistic-working";
 
-// img {
-//     max-width: 100%;
-// }
-
-.growing-box {
-    margin-top: 80px;
-    flex-direction: column;
-}
-.growing-title {
-    padding: 0 123px 50px 300px;
-    width: 40%;
-}
-.growing-block {
-    display: flex;
-    padding-left: 123px;
-    padding-right: 123px;
-}
-.growing-element {
-    padding: 20px;
-}
-.growing-element p {
-    border-top: 1px solid #000000;
-    padding-top: 10px;
-}
-.growing-element-picture {
-    text-align: center;
-}
-.growing-element-picture img {
-    width: 150px;
-}
-.growing-title p {
-    font-size: 20px;
-}
-.growing-news-surprises {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.news {
-    background-color: #FFF572;
-    padding: 35px 90px 70px 45px;
-}
-.news, .news-image {
-    flex: 6;
-}
-.news-image {
-    height: 200px;
-    /* width: 500px; */
-    background: url(../img/6_block/Growing_news_surprises.png) no-repeat;
-    background-size: cover;
-}
-.event-and-workshops {
-    height: 700px;
-    background-color: #fbfae8;
-    /* background: linear-gradient(-15deg, transparent 180px, #fbfae8 0), linear-gradient(15deg, transparent 180px, #ffffff 0); */
-    z-index: 1;
-    position: relative;
-}
-.event-and-workshops:after {
-    background: #ffffff;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    bottom: 0;
-    transform: skewY(-8deg);
-    transform-origin: 100%;
-    /* -webkit-backface-visibility: hidden; // for Chrome Windows */
-}
-.load-more-events {
-    padding: 13px 25px 11px;
-    background-color: #FFF572;
-    border: #FFF572;
-    margin: 250px 550px 0;
-    font-size: 16px;
-}
-.event-and-workshops {
-    flex-direction: column;
-    padding-left: 123px;
-    padding-right: 123px;
-}
-.container-events {
-    display: flex;
-    flex-direction: row;
-}
-.event-element-box {
-    margin: 20px;
-    width: 30%;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
-}
-.event-info {
-    padding: 20px;
-    background: white;
-}
-.holistic-working {
-    position: relative;
-    background: url(../img/third_block/Illustration_brain.png) no-repeat;
-    background-size: contain;
-    margin-top: 170px;
-    height: 410px;
-}
-.holistic-working img {
-    max-width: 100%;
-}
-.holistic-working-box {
-    width: 30%;
-}
 .specialist {
-    background-color: #FFEAED;
+  background-color: #ffeaed;
 }
 .gallery-box {
-    width: 55%;
-    max-width: 792px;
-    height: 530px;
-    margin: 150px auto 210px;
-    position: relative;
+  width: 55%;
+  max-width: 792px;
+  height: 530px;
+  margin: 150px auto 210px;
+  position: relative;
 }
 .gallery-box img {
-    position: absolute;
+  position: absolute;
 }
 .gallery-box_item-1 {
-    width: 70.5%;
-    max-width: 550px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    animation: upDown 3s ease-in-out infinite alternate;
+  width: 70.5%;
+  max-width: 550px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  animation: upDown 3s ease-in-out infinite alternate;
 }
 .gallery-box_item-2 {
-    width: 39.2%;
-    max-width: 310px;
-    top: 0;
-    left: 0;
+  width: 39.2%;
+  max-width: 310px;
+  top: 0;
+  left: 0;
 }
 .gallery-box_item-3 {
-    width: 33.2%;
-    max-width: 262px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+  width: 33.2%;
+  max-width: 262px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 .gallery-box_item-4 {
-    width: 59%;
-    max-width: 467px;
-    left: 100px;
-    bottom: 0;
+  width: 59%;
+  max-width: 467px;
+  left: 100px;
+  bottom: 0;
 }
 .gallery-title {
-    position: absolute;
-    width: 306px;
-    padding: 20px;
-    right: 80px;
-    bottom: 41px;
-    background-color: #2EFFC0;
-    transition: all 0.3s ease-in-out;
-    font-size: 34px;
-    line-height: 42px;
-    color: #272727;
-    font-weight: 500;
-    text-decoration: underline;
+  position: absolute;
+  width: 306px;
+  padding: 20px;
+  right: 80px;
+  bottom: 41px;
+  background-color: #2effc0;
+  transition: all 0.3s ease-in-out;
+  font-size: 34px;
+  line-height: 42px;
+  color: #272727;
+  font-weight: 500;
+  text-decoration: underline;
 }
 .gallery-title:hover {
-    background-color: #FFF572;
+  background-color: #fff572;
 }
 .membership {
-    background-color: #F9F5EF;
-    flex-direction: column;
-    padding-left: 123px;
-    padding-right: 123px;
-    padding-bottom: 150px;
+  background-color: #f9f5ef;
+  flex-direction: column;
+  padding-left: 123px;
+  padding-right: 123px;
+  padding-bottom: 150px;
 }
 .membership-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .membership-plans-box-container {
-    width: 25%;
-    padding: 0 15px;
+  width: 25%;
+  padding: 0 15px;
 }
 .membership-plans-box {
-    background-color: #fff;
-    padding: 10px;
-    height: 500px;
-    text-align: center;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 10px;
+  height: 500px;
+  text-align: center;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 }

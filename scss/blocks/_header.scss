@@ -1,5 +1,5 @@
 .header {
-  background-color: $mainColor;
+  background-color: $lightYellow;
 }
 .navbar {
   padding-top: 35px;
@@ -23,18 +23,18 @@
 }
 .languages__item {
   text-decoration: none;
-  color: #000000;
+  color: $black;
   line-height: 14px;
 
   &:hover {
-    color: #ca9e67;
+    color: $logoColorText;
   }
 }
 .languages__item--active {
-  color: #ca9e67;
+  color: $logoColorText;
 }
 .languages__line {
-  border-left: 2px solid black;
+  border-left: 2px solid $black;
   border-top: 11px solid;
   margin-left: 10px;
   margin-right: 10px;
@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: row;
   height: 800px;
-  background-color: $mainColor;
+  background-color: $lightYellow;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -85,7 +85,7 @@
   }
 }
 .banner:after {
-  background: #ffffff;
+  background: $white;
   content: "";
   display: block;
   height: 25%;

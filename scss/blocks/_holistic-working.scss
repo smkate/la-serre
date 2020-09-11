@@ -2,28 +2,69 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  padding-top: 400px;
+  padding-top: 320px;
   padding-bottom: 400px;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 130px;
+    padding-bottom: 200px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
 }
 .holistic-working-box {
   width: 50%;
   z-index: 1;
 
   @media screen and (max-width: 992px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 }
-.holistic-image-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 80%;
 
-  @media screen and (max-width: 992px) {
+.holistic-1,
+.holistic-2,
+.holistic-3,
+.holistic-4,
+.holistic-5 {
+  position: absolute;
+  z-index: 997;
+
+  @media screen and (max-width: 768px) {
     display: none;
   }
+}
+.holistic-1 {
+  top: 35%;
+  right: 35%;
+  width: 6%;
+}
+.holistic-2 {
+  top: 26%;
+  right: 32%;
+  width: 6%;
+}
+.holistic-3 {
+  top: 23%;
+  right: 33%;
+  width: 4%;
+  z-index: 998;
+}
+.holistic-4 {
+  top: 9%;
+  right: 21%;
+  width: 13%;
+}
+.holistic-5 {
+  top: 17%;
+  right: 41%;
+  width: 9%;
 }
 .holistic-image-2 {
   position: absolute;

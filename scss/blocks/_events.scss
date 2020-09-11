@@ -1,5 +1,5 @@
 .event-and-workshops {
-  background-color: #fbfae8;
+  background-color: $lightYellow;
   /* background: linear-gradient(-15deg, transparent 180px, #fbfae8 0), linear-gradient(15deg, transparent 180px, #ffffff 0); */
   z-index: 1;
   position: relative;
@@ -8,7 +8,7 @@
   width: 100%;
 }
 .event-and-workshops:after {
-  background: #ffffff;
+  background: $white;
   content: "";
   display: block;
   height: 35%;
@@ -32,8 +32,8 @@
 }
 .load-more-events {
   padding: 13px 25px 11px;
-  background-color: #fff572;
-  border: #fff572;
+  background-color: $yellow;
+  border: $yellow;
   font-size: 16px;
 }
 .event-and-workshops {
@@ -58,5 +58,5 @@
 }
 .event-info {
   padding: 20px;
-  background: white;
+  background: $white;
 }

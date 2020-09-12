@@ -3,11 +3,10 @@
   flex-wrap: wrap;
   position: relative;
   padding-top: 100px;
-  height: 3130px;
+  height: 3190px;
   background-color: $lightPink;
 }
-.specialist-person,
-.specialist-info {
+.specialist-person {
   width: 50%;
 }
 .info__img {
@@ -19,45 +18,63 @@
   // left: 17%;
   width: 100%;
 }
+.specialist-info {
+  position: absolute;
+  width: 50%;
+}
+// blocks
+.info-1 {
+  right: 0%;
+  top: 350px;
+}
+.info-2 {
+  right: 0%;
+  top: 1800px;
+}
+.info-3 {
+  right: 0%;
+  top: 2800px;
+}
+// images
 .info-1-1 {
-  top: 480px;
-  left: 20%;
+  top: 18%;
+  //   left: 20%;
   width: 31.2%;
   max-width: 400px;
 }
 .info-1-2 {
-  top: 150px;
+  top: 20%;
   left: 0%;
   width: 11%;
   max-width: 140px;
 }
 .info-1-3 {
-  top: 370px;
+  top: 50%;
   left: 0%;
   width: 20%;
   max-width: 256px;
 }
 .info-1-4 {
-  top: 650px;
-  left: 40%;
+  top: 1220px;
+  left: 50%;
   width: 10%;
   max-width: 128px;
 }
 .info-2-1 {
-  top: 650px;
+  top: 1600px;
   left: 25%;
   width: 21%;
   max-width: 280px;
 }
 .info-2-2 {
-  top: 650px;
+  top: 1800px;
   left: 10%;
   width: 26%;
   max-width: 200px;
 }
 .info-2-3 {
-  top: 750px;
   left: 21%;
+  top: 200px;
   width: 14.2%;
   max-width: 101px;
 }
@@ -68,43 +85,43 @@
   max-width: 212px;
 }
 .info-2-5 {
-  top: 850px;
-  left: 30%;
+  top: 2200px;
+  left: 35%;
   width: 11.3%;
   max-width: 90px;
 }
 .info-3-1 {
-  top: 950px;
+  top: 2800px;
   left: 34%;
   width: 38.6%;
   max-width: 300px;
 }
 .info-3-2 {
-  top: 850px;
+  top: 2650px;
   left: 33%;
   width: 7.5%;
   max-width: 40px;
 }
 .info-3-3 {
-  top: 729px;
+  top: 2880px;
   left: 0%;
   width: 8.3%;
   max-width: 40px;
 }
 .info-3-4 {
-  top: 950px;
-  left: 28%;
+  top: 2830px;
+  left: 31%;
   width: 5%;
   max-width: 60px;
 }
 .info-3-5 {
-  top: 1050px;
+  top: 2930px;
   left: 0%;
   width: 39.7%;
   max-width: 320px;
 }
 .info-3-6 {
-  top: 1130px;
+  top: 3200;
   left: 27%;
   width: 15.5%;
   max-width: 120px;

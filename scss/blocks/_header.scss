@@ -123,7 +123,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 103;
+  // z-index: 103;
   background: url(../img/header/Header_head.png) no-repeat;
   background-size: contain;
   background-position: center;
@@ -146,8 +146,70 @@
   width: 1200px;
   top: 50px;
   left: -370px;
-  z-index: 103;
+  // z-index: 103;
   background: url(../img/header/Oval.svg) no-repeat;
   background-size: contain;
   background-position: center;
+  // animation: myOrbit 6s linear infinite;
 }
+.lumination {
+  z-index: 999;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  transform: rotate(90deg) scale(0.67, 1);
+  background-color: green;
+  opacity: 0.3;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg) translate(-150px) rotate(0) scale(1.5, 1);
+  }
+  to {
+    transform: rotate(360deg) translate(-150px) rotate(-360deg) scale(1.5, 1);
+  }
+}
+
+.lumination .dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border-radius: 100%;
+  background: #000;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-150px) scale(1.5, 1);
+}
+.lumination .dot1 {
+  animation: circle 3s 1s linear infinite;
+  background: red;
+}
+.lumination .dot2 {
+  animation: circle 3s 2s linear infinite;
+  background: yellow;
+}
+.lumination .dot3 {
+  animation: circle 3s 3s linear infinite;
+}
+
+.halo-1 {
+  position: absolute;
+  left: 43%;
+  top: 51%;
+  // animation: myOrbit 6s linear infinite;
+}
+// @keyframes myOrbit {
+//   0% {
+//     transform: rotate(0deg) scaleZ(0.5) rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(0deg) scaleZ(0.5) rotate(360deg);
+//   }
+// 0%  { transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
+// 25%  { transform: rotate(90deg) translateX(5px) translateY(120px) rotate(-90deg) scale(.75); }
+// 50%  { transform: rotate(180deg) translateX(5px) translateY(120px) rotate(-180deg) scale(.60); }
+// 75%  { transform: rotate(270deg) translateX(5px) translateY(120px) rotate(-270deg) scale(.75); }
+// 100%  { transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg) scale(1); }}
+// }

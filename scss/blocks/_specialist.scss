@@ -1,10 +1,13 @@
 .specialist {
   display: flex;
   flex-wrap: wrap;
+  background-color: $lightPink;
+}
+.specialist-box {
   position: relative;
   padding-top: 100px;
-  height: 3190px;
-  background-color: $lightPink;
+  padding-bottom: 130px;
+  height: 3290px;
 }
 .specialist-person {
   width: 50%;
@@ -15,24 +18,22 @@
 .specialist__main-img {
   position: sticky;
   top: 100px;
-  // left: 17%;
-  width: 100%;
+  left: 17%;
+  width: 70%;
 }
 .specialist-info {
   position: absolute;
-  width: 50%;
+  right: 10%;
+  width: 30%;
 }
 // blocks
 .info-1 {
-  right: 0%;
   top: 350px;
 }
 .info-2 {
-  right: 0%;
   top: 1800px;
 }
 .info-3 {
-  right: 0%;
   top: 2800px;
 }
 // images

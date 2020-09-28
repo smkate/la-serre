@@ -1,7 +1,14 @@
+* {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
 body {
   font-family: "Suisse Intl Medium", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-style: normal;
   color: #272727;
+}
+p {
+  margin: 0px;
 }

@@ -74,10 +74,13 @@
 
   @media (max-width: 1024px) {
     bottom: 10.5%;
+    font-size: 26px;
+    line-height: 32px;
   }
 
   @media (max-width: 768px) {
     bottom: 7.5%;
+    right: 0;
   }
 
   @media (max-width: 414px) {

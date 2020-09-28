@@ -1,18 +1,24 @@
 @font-face {
-    font-family: 'Suisse Intl Medium';
-    src: url("../fonts/Suisse Int'l Medium/Suisse Int'l Medium.woff") format("woff");
+  font-family: "Suisse Intl Medium";
+  src: url("../fonts/Suisse Int'l Medium/Suisse Int'l Medium.woff")
+    format("woff");
 }
 @font-face {
-    font-family: 'Euclid Flex Trial';
-    src: url("../fonts/Euclid Flex Trial/Euclid Flex Trial.woff") format("woff");
+  font-family: "Euclid Flex Trial";
+  src: url("../fonts/Euclid Flex Trial/Euclid Flex Trial.woff") format("woff");
 }
-h2, h3 {
-    font-family: 'Euclid Flex Trial';
-    font-style: normal;
+h2,
+h3 {
+  font-family: "Euclid Flex Trial";
+  font-style: normal;
 }
 h2 {
-    font-size: 34px;
+  font-size: 34px;
+
+  @media (max-width: 1024px) {
+    font-size: 26px;
+  }
 }
 h3 {
-    font-size: 22px;
+  font-size: 22px;
 }

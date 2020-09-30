@@ -1,6 +1,5 @@
 .event-and-workshops {
   background-color: $lightYellow;
-  /* background: linear-gradient(-15deg, transparent 180px, #fbfae8 0), linear-gradient(15deg, transparent 180px, #ffffff 0); */
   z-index: 1;
   position: relative;
 }
@@ -21,7 +20,11 @@
   transform-origin: 100%;
 
   @media screen and (max-width: 992px) {
-    height: 15%;
+    height: 22%;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 13%;
   }
 }
 .btn-more {
@@ -50,7 +53,7 @@
 
   @media screen and (max-width: 992px) {
     flex: 0 0 30%;
-    margin: 10px;
+    margin: 0 0 20px 0;
   }
 
   @media screen and (max-width: 768px) {

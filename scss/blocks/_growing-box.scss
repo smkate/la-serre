@@ -1,23 +1,28 @@
 .growing-box {
-  margin-top: 80px;
   flex-direction: column;
+  margin-bottom: 90px;
 }
-.growing-title {
-  width: 40%;
+.growing-box__text {
+  width: 70%;
+  padding-left: 16%;
 
-  @media screen and (max-width: 992px) {
-    width: 60%;
-  }
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 425px) {
     width: 100%;
+    padding-left: 15px;
   }
+}
+.growing-box__text-title {
+  font-size: 26px;
+  line-height: 32px;
+}
+.growing-box__text-description {
+  font-size: 20px;
+  line-height: 26px;
 }
 .growing-block {
   display: flex;
   justify-content: space-between;
-  padding-left: 123px;
-  padding-right: 123px;
+  padding-top: 50px;
 
   @media screen and (max-width: 992px) {
     padding-left: 0;
@@ -25,7 +30,7 @@
   }
 }
 .growing-element {
-  padding: 20px;
+  padding: 15px;
   flex: 0 0 25%;
 
   @media screen and (max-width: 768px) {

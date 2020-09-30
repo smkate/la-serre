@@ -2,44 +2,111 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $lightPink;
+  position: relative;
+
+  // &:after {
+  //   background: $white;
+  //   content: "";
+  //   display: block;
+  //   height: 5%;
+  //   left: 0;
+  //   position: absolute;
+  //   right: 0;
+  //   bottom: 0;
+  //   transform: skewY(-8deg);
+  //   transform-origin: 100%;
+
+  //   @media screen and (max-width: 992px) {
+  //     height: 22%;
+  //   }
+
+  //   @media screen and (max-width: 425px) {
+  //     height: 13%;
+  //   }
+  // }
 }
 .specialist-box {
   position: relative;
   padding-top: 100px;
   padding-bottom: 130px;
   height: 3290px;
+
+  @media (max-width: 425px) {
+    height: auto;
+  }
 }
 .specialist-person {
   width: 50%;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 }
 .info__img {
   position: absolute;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 }
 .specialist__main-img {
   position: sticky;
   top: 100px;
   left: 17%;
-  width: 70%;
+  width: 80%;
+
+  @media (max-width: 425px) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}
+.specialist-person-hide {
+  display: none;
+  flex: 0 0 100%;
+  text-align: center;
+
+  @media (max-width: 425px) {
+    display: block;
+  }
 }
 .specialist-info {
   position: absolute;
-  right: 10%;
-  width: 30%;
+  right: 1%;
+  width: 40%;
+
+  @media (max-width: 425px) {
+    position: relative;
+    flex: 0 0 100%;
+    padding: 0 15px;
+  }
 }
 // blocks
 .info-1 {
-  top: 350px;
+  top: 850px;
+
+  @media (max-width: 425px) {
+    top: auto;
+  }
 }
 .info-2 {
   top: 1800px;
+
+  @media (max-width: 425px) {
+    top: auto;
+  }
 }
 .info-3 {
   top: 2800px;
+
+  @media (max-width: 425px) {
+    top: auto;
+  }
 }
 // images
 .info-1-1 {
-  top: 18%;
-  //   left: 20%;
+  top: 25%;
+  left: 25%;
   width: 31.2%;
   max-width: 400px;
 }
@@ -75,13 +142,13 @@
 }
 .info-2-3 {
   left: 21%;
-  top: 200px;
+  top: 900px;
   width: 14.2%;
   max-width: 101px;
 }
 .info-2-4 {
   left: 0%;
-  top: 370px;
+  top: 970px;
   width: 27.8%;
   max-width: 212px;
 }
@@ -122,7 +189,7 @@
   max-width: 320px;
 }
 .info-3-6 {
-  top: 3200;
+  top: 3000px;
   left: 27%;
   width: 15.5%;
   max-width: 120px;

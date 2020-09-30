@@ -18,16 +18,27 @@
 .holistic-working-box {
   width: 50%;
   z-index: 1;
+  margin-left: 8%;
 
   @media screen and (max-width: 992px) {
-    width: 50%;
+    width: 45%;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 425px) {
     width: 100%;
+    margin-left: 0;
+    padding: 0 15px;
   }
 }
+.holistic-working-box__title {
+  font-size: 34px;
+  line-height: 42px;
 
+  @media screen and (max-width: 425px) {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
 .holistic-1,
 .holistic-2,
 .holistic-3,
@@ -36,7 +47,7 @@
   position: absolute;
   z-index: 997;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 425px) {
     display: none;
   }
 }

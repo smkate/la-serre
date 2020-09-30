@@ -19,7 +19,7 @@
         <div class="navbar__logo logo">
           <img
             class="logo__image"
-            src="img/header/logo_la_serre.png"
+            src="img/logo_la-serre.png"
             alt="Welcome to site of company La-serre"
           />
         </div>
@@ -34,12 +34,12 @@
       </div>
       <!-- ./navbar -->
       <div class="banner container-fluid">
-        <div class="container">
-          <div class="banner__title-epsn-detail top-line">
+        <div class="banner-text container">
+          <div class="banner-text__title-epsn-detail">
             <span>Work Space, Health <br />& Education</span>
           </div>
-          <div class="banner__title-offset top-line">
-            <h2>An ecosystem <br />nourished by work <br />and life</h2>
+          <div class="banner-text__title-offset">
+            <h2>An ecosystem nourished by work and life</h2>
           </div>
         </div>
         <div class="stick-cah top-line">
@@ -54,13 +54,13 @@
             <div class="dot dot3"></div>
           </div> -->
           <!-- this's an example -->
-          <!-- <div class="oval">
-            <div class="lumination">
+          <div class="oval">
+            <!-- <div class="lumination">
               <div class="dot dot1"></div>
               <div class="dot dot2"></div>
               <div class="dot dot3"></div>
-            </div>
-          </div> -->
+            </div> -->
+          </div>
         </div>
       </div>
       <!-- ./banner -->
@@ -68,9 +68,9 @@
     <!-- growing-block -->
     <section class="container-fluid growing-box">
       <div class="container">
-        <div class="growing-title">
-          <h2>La Serre is growing</h2>
-          <p>
+        <div class="growing-box__text">
+          <h2 class="growing-box__text-title">La Serre is growing</h2>
+          <p class="growing-box__text-description">
             Coming soon: 500 m2 where you can nourish your projects, your body,
             your business and your mind.
           </p>
@@ -199,8 +199,10 @@
     <!-- holistic-working -->
     <section class="container holistic-working">
       <div class="holistic-working-box">
-        <h3>Holistic working at La Serre</h3>
-        <p>
+        <h3 class="holistic-working-box__title">
+          Holistic working at La Serre
+        </h3>
+        <p class="holistic-working-box__description">
           La Serre is a lifestyle laboratory where naturopathy concepts are
           woven together with a collaborative space for professionals.
           Well-being is a focus here. Because we believe that when you work on
@@ -269,6 +271,13 @@
           src="img/specialist/Entrepreneurs_img_4.png"
           alt=""
         />
+        <div class="specialist-person-hide">
+          <img
+            class="specialist__main-img"
+            src="img/specialist/Parallax_central.png"
+            alt="Specialist"
+          />
+        </div>
         <div class="specialist-info info-1">
           <h3 class="specialist-info_title">
             Entrepreneurs + therapists + medical pros
@@ -306,6 +315,13 @@
           src="img/specialist/Healthy_img_5.png"
           alt=""
         />
+        <div class="specialist-person-hide">
+          <img
+            class="specialist__main-img"
+            src="img/specialist/Parallax_central.png"
+            alt="Specialist"
+          />
+        </div>
         <div class="specialist-info info-2">
           <h3 class="specialist-info_title">Healthy lifestyle at a discount</h3>
           <p class="specialist-info_description">
@@ -345,6 +361,13 @@
           src="img/specialist/Food_img_6.png"
           alt=""
         />
+        <div class="specialist-person-hide">
+          <img
+            class="specialist__main-img"
+            src="img/specialist/Parallax_central.png"
+            alt="Specialist"
+          />
+        </div>
         <div class="specialist-info"></div>
         <div class="specialist-info info-3">
           <h3 class="specialist-info_title">Food for thought</h3>
@@ -401,8 +424,8 @@
                 <span>Printer Healthy</span>
               </p>
               <button class="membership-sign-up">Sign up</button>
-              <span class="most-used__lsbel">Most used plan</span>
             </div>
+            <span class="most-used__lsbel">Most used plan</span>
           </div>
           <div class="membership-plans-box-container">
             <div class="membership-plans-box">
@@ -453,7 +476,7 @@
         </div>
       </div>
     </section>
-    <!-- growing-news-surprises -->
+    <!-- subscribe -->
     <section class="container subscribe">
       <div class="subscribe__image">
         <img
@@ -492,21 +515,33 @@
       </div>
     </section>
     <!-- footer -->
-    <!-- <footer class="footer container">
+    <footer class="footer container">
       <div class="footer__logo">
         <img src="img/logo_cAH.png" alt="APMT" />
       </div>
       <div class="footer__partners">
-        <span>Le cAH regroupe en son sein</span>
-        <img src="img/logo_la-serre.png" alt="La-serre" />
-        <img src="img/logo_APMT.png" alt="APMT" />
-        <img src="img/logo_EPSN.png" alt="EPSN" />
+        <div class="footer__partners-elem">
+          <span>Le cAH regroupe en son sein</span>
+        </div>
+        <div class="footer__partners-elem">
+          <img src="img/logo_la-serre.png" alt="La-serre" />
+        </div>
+        <div class="footer__partners-elem">
+          <img src="img/logo_APMT.png" alt="APMT" />
+        </div>
+        <div class="footer__partners-elem">
+          <img src="img/logo_EPSN.png" alt="EPSN" />
+        </div>
       </div>
       <div class="footer__main-partner">
-        <span>Réalisation</span>
-        <img src="img/logo_storm.svg" alt="Storm" />
+        <div class="footer__main-partner-elem">
+          <span>Réalisation</span>
+        </div>
+        <div class="footer__main-partner-elem">
+          <img src="img/logo_storm.svg" alt="Storm" />
+        </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <script src="js/animation.js"></script> -->
   </body>
 </html>

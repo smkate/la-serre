@@ -1,6 +1,10 @@
 .contact {
   padding-top: 100px;
 
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+  }
+
   @media screen and (max-width: 425px) {
     flex-wrap: wrap-reverse;
   }
@@ -26,6 +30,7 @@
 
   @media screen and (max-width: 425px) {
     flex: 0 0 100%;
+    padding: 0 15px;
   }
 }
 .contact__info-title {
@@ -58,6 +63,6 @@
   }
 
   img {
-    width: 13%;
+    width: 10%;
   }
 }
